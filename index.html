@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a2 GC Categorizer</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="data.js"></script>
+    <script src="quiz.js" defer></script>
+
+</head>
+<body>
+
+    <main>
+        <span id="prompt">How much do you agree with the following question:</span>
+        <h1>I <span id="question"></span></h1>
+        <p id="other"></p>
+        <div id="answers">
+            <button onclick="score(-3)">Completely Disagree</button>
+            <button onclick="score(-2)">Disagree</button>
+            <button onclick="score(-1)">Slightly Disagree</button>
+            <button onclick="score(0)">Neutral</button>
+            <button onclick="score(1)">Slightly Agree</button>
+            <button onclick="score(2)">Agree</button>
+            <button onclick="score(3)">Completely Agree</button>
+        </div>
+        <sub id="count"></sub>
+    </main>
+
+</body>
+</html>
