@@ -23,7 +23,7 @@ function serve_question() {
         document.getElementById('question').parentElement.innerText = `You're most like ${person ?? 'No one.'}`;
         document.getElementById('other').innerHTML = `<h2>Breakdown</h2><br>${analysis.join('<br>')}`;
         document.getElementById("count").innerHTML = 'Done!';
-        document.getElementById('answers').innerHTML = `<button onclick="copy_results()">Copy Score Data (Send to flora)</button>`;
+        document.getElementById('answers').innerHTML = `<button onclick="copy_results()">Copy Score Data</button>`;
     }
 
     else document.getElementById('question').innerText = q;
